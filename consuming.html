@@ -70,7 +70,6 @@
     loginForm.addEventListener('submit', submit);
     async function login(username, password) {
         const url = "https://api.okra.ng/v2/mock-api/login";
-        console.log('making login request');
         const data = {username, password};
         const response = await fetch(url, {
             method: 'POST',
